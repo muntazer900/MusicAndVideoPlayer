@@ -11,7 +11,7 @@ from MusicAndVideo.helpers.merrors import capture_err
 
 ARQ_API_KEY = "QFOTZM-GSZUFY-CHGHRX-TDEHOZ-ARQ"
 aiohttpsession = aiohttp.ClientSession()
-arq = ARQ("https://thearq.tech", ARQ_API_KEY, aiohttpsession)
+arq = ARQ("https://grambuilders.tech", ARQ_API_KEY, aiohttpsession)
 
 
 async def quotify(messages: list):
@@ -42,12 +42,12 @@ def isArgInt(message: Message) -> bool:
 @capture_err
 async def quotly_func(client, message: Message):
     if not message.reply_to_message:
-        return await message.reply_text("Membalas Pesan Untuk Mengutipnya !")
+        return await message.reply_text("رد على رسالة ولتصير غبي !")
     if not message.reply_to_message.text:
         return await message.reply_text(
             "Pesan yang Dibalas tidak memiliki teks apa pun! Tolong Balas Pesan Teks !"
         )
-    m = await message.reply_text("`Membuat kutipan Pesan...`")
+    m = await message.reply_text("`جاري التحويل انتضر ...`")
     if len(message.command) < 2:
         messages = [message.reply_to_message]
 
