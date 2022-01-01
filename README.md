@@ -21,7 +21,7 @@
 - `/help` - untuk melihat daftar perintah
 
 #### ⚡ PERINTAH UNTUK SEMUA ADMIN
-- `/resume` - untuk melanjutkan pemutaran lagu atau video
+- `/resume` - untuk melanjutkan pemutaran lagu atau vide
 - `/pause` - untuk untuk menjeda pemutaran lagu atau video
 - `/skip` - untuk melewati lagu atau video
 - `/end` - untuk mengakhiri pemutaran
